@@ -10,6 +10,11 @@
       "StackName": "amplify-moviepicker-dev-124503",
       "StackId": "arn:aws:cloudformation:us-east-2:205010211824:stack/amplify-moviepicker-dev-124503/6bf1fc40-4934-11eb-a5d2-06ffde09431c",
       "AmplifyAppId": "d161bs1n8wsa47"
+    },
+    "categories": {
+      "auth": {
+        "moviepicker7242f104": {}
+      }
     }
   }
 }
