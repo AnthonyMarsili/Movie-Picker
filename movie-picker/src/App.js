@@ -40,13 +40,13 @@ const App = () => { /* app is a function */
       const todo = { ...formState } // get the values in the formState (name, description) pair
       setTodos([...todos, todo]) // add that todo to the list of current todos
       setFormState(initialState) // make the form state be the inital state
-      await API.graphql(graphqlOpeartion(createTodo, {input: todo})) // add a todo to the db with that (name, desc) pair
+      await API.graphql({ query: createTodo, variables: {input: todo}}) // add a todo to the db with that (name, desc) pair
     } catch (err) { console.log('error creating todo:', err) }
   }
 
   return (
     <div style = {styles.container}>
-      <AmplifySignOut />
+      <amplify-sign-out button-text = "Click here to sign out"></amplify-sign-out>
       <h2>Test App</h2>
       <input
         onChange = {event => setInput('name', event.target.value)}
