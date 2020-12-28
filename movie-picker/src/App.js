@@ -46,6 +46,7 @@ const App = () => { /* app is a function */
 
   return (
     <div style = {styles.container}>
+      <AmplifySignOut />
       <h2>Test App</h2>
       <input
         onChange = {event => setInput('name', event.target.value)}

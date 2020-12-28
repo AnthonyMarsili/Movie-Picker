@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "moviepicker7242f104": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d161bs1n8wsa47",
+          "type": "manual"
+        }
       }
     }
   }
